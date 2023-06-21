@@ -2,6 +2,7 @@ import com.example.Feline;
 import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mock;
 
 import java.util.List;
 
@@ -9,8 +10,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
 public class LionTest {
+    @Mock
+    Feline feline;
 
-    Feline feline = new Feline();
 
     @Test
     public void getKittensLionFemaleTestShouldReturnOne() throws Exception {
